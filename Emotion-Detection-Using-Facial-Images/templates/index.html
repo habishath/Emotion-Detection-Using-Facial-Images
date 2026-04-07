@@ -1,0 +1,191 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+   <title>Emotion Detection</title>
+   <style>
+      .custom-background {
+      background-image: url("{% static '/images/Emotion-recognition-software1.jpg' %}");
+      background-size: cover; 
+      background-position: center;
+      opacity: 0.7;
+      height: 100vh;
+    }
+    #cover-text {
+      opacity: 1;
+    }
+    .block-image{
+      max-width: 100%;
+      height: auto;
+    }
+    .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e22973;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .scroll-to-top:hover {
+    background-color: #0056b3;
+  }
+
+  </style>
+</head>
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#"><img width="50" height="50" src="{% static '/images/bird-removebg-preview.png' %}"></a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="#">Home</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">About Us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+             </ul>
+             <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success" type="submit">Search</button>
+             </form>
+           </div>
+         </div>
+       </nav>
+   </header>
+   <div class="container-fluid p-0 custom-background">
+      <div class="row">
+          <div class="col-md-10" id="cover-text" style="padding: 100px; color: rgb(238, 234, 234);">
+
+            <h1 style="font-size: 70px;">Emotion Detection Software</h1>
+            <h2>Get more insight into your audience by 
+               <br>utilising AI's ability to identify emotions.</h2>
+            <br />
+            <a href="{% url 'demo' %}" class="btn btn-success">Try Out Demo</a>
+          </div>
+      </div>
+  </div>
+
+   <div class="container mt-5" style="padding: 50px;">
+      <div class="row">
+         <div class="col-sm-4">
+            <div class="container-fluid">
+               <img class="block-image" src="{% static '/images/pic-1.jpg' %}">
+            </div>
+            <hr class="d-sm-none">
+         </div>
+         <div class="col-sm-8">
+            <h6>Emotion recognition AI</h6>
+            <h3>What is facial emotion detection software?</h3>
+            <p class="mb-4"></p><p><span style="font-weight: 400;">Emotion detection software is a technology that uses artificial intelligence (AI) and machine learning algorithms to </span>
+            <b>analyze and interpret facial expressions and emotions</b></p>
+         </div>
+      </div>
+   </div>
+
+   <div class="container mt-5" style="padding: 50px;">
+      <div class="row">
+         <div class="col-sm-8">
+            <h6>Emotion Detection Software</h6>
+            <h3>How emotion detection software works?</h3>
+            <p class="mb-4"><span style="font-weight: 400;">Our emotion detection software displays <b>neutral</b> as well as the appropriate basic 
+               emotion from the following list: </span><b>fear, disgust, anger, sadness, and happiness.</b>
+               <br /><br />
+               By using our emotion detection software, you can identify emotions in images and use that information 
+               to make data-driven business decisions by analysing people's feelings in real-world scenarios. </p>
+         </div>
+         <div class="col-sm-4">
+            <div class="container-fluid">
+               <img class="block-image" src="{% static '/images/pic-2.png' %}">
+            </div>
+            <hr class="d-sm-none">
+         </div>
+      </div>
+   </div>
+ 
+   <div class="container mt-5" style="padding: 50px;">
+      <div class="row">
+         <div class="col-sm-4">
+            <div class="container-fluid">
+               <img class="block-image" src="{% static '/images/pic-3.png' %}">
+            </div>
+            <hr class="d-sm-none">
+         </div>
+         <div class="col-sm-8">
+            <h6>Numerous real-life application</h6>
+            <h3>Where can you use emotion detection technology?</h3>
+            <p class="mb-4"><span style="font-weight: 400;">Emotion detection has transformative potential in multiple 
+               fields. In Human-Computer Interaction, it enriches user experiences by enabling machines to respond to 
+               emotions. Healthcare benefits from assessing patients' emotional well-being and aiding in diagnoses. In 
+               Marketing and Advertising, it empowers companies to craft compelling strategies by understanding 
+               consumers' emotional responses to products and ads, fostering more effective engagement.</p>
+         </div>
+      </div>
+   </div>
+
+   <footer>
+      <div class="container-fluid">
+         <div class="row" style="background-color: darkgray; padding: 15px;">
+            <div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
+               <p class="">Copyright © 2023 <a href="#" style="color: black; text-decoration: none;">Technologies</a></p>
+            </div>
+            <div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
+               <div class="icon-images">
+                  <a href="#"><i class="bi bi-facebook" style="font-size: 24px; margin-right: 10px;"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x" style="font-size: 24px; margin-right: 10px;"></i></a>
+                  <a href="#"><i class="bi bi-instagram" style="font-size: 24px; margin-right: 10px;"></i></a>
+                  <a href="#"><i class="bi bi-youtube" style="font-size: 24px; margin-right: 10px;"></i></a>
+               </div>
+            </div>
+            <div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
+               <a href="#" style="color: black; text-decoration: none; margin-right: 10px;">Privacy Policy</a>
+               <a href="#" style="color: black; text-decoration: none;">Terms of Use</a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <a href="#" data-target="html" class="scroll-to-target scroll-to-top" style="display: none;">
+      <i class="bi bi-arrow-up"></i>
+   </a>
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var scrollButton = document.querySelector(".scroll-to-top");
+        scrollButton.addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 200) {
+            scrollButton.style.display = "block";
+          } else {
+            scrollButton.style.display = "none";
+          }
+        });
+      });
+    </script>    
+</body>
+</html>

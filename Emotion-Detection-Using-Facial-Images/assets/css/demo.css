@@ -1,0 +1,42 @@
+/* Add custom styles for the image */
+.image-style {
+    border: 2px solid #333; /* Example border */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Example box shadow */
+}
+
+/* Style the name and prediction */
+.name {
+    font-weight: bold;
+    color: #007bff; /* Blue color */
+}
+
+.type {
+    color: #d91a1a; /* Red color */
+}
+
+/* styles.css */
+
+/* Style for the container */
+
+
+/* Style for the list */
+.info_container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for the list items */
+.info_container li {
+    font-weight: bold;
+}
+
+/* Style for the name and prediction spans */
+.name {
+    color: #007bff;
+}
+
+.type {
+    color: #d91a1a;
+}
